@@ -15,7 +15,7 @@ function divide(num1,num2){
     return num1/num2;
 }
 
-function cal(num1,num2, result){
+function cal(num1,num2, result){  //result 传入function
    return result(num1, num2)
 }
 
