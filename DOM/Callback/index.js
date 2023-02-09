@@ -57,10 +57,10 @@
 // high(3,4,add)
 function printString(callbackHof, callback_only, str) {
     str +=' concated first';   // str = anything +'concated first' 
-   callbackHof( callback_only,str);
+   callbackHof( callback_only,str); 
  }
  
- function concatFirst(callback_only, stk)  //str = stk
+ function concatFirst(callback_only, stk)  // concatFirst(callback_only, "anything concated first")
  {
    callback_only(stk);    //这里的input = concatagain（sk）结果为 ‘contated again’
  }
