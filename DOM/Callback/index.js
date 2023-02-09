@@ -11,22 +11,22 @@
 // // })
 // // result.innerHTML = "hello" + message;
 
-// const mylistener = (type, callbacks) =>{ //这里callbacks是一个function
-//     //when type trigger
-//     let event1 = {
-//         eventtype : 'keypress',
-//         time :'3s',
-//         why :'press on keyboard'
+const mylistener = (type, callbacks) =>{ //这里callbacks是一个function
+    //when type trigger
+    let event1 = {
+        eventtype : 'keypress',
+        time :'3s',
+        why :'press on keyboard'
 
-//     }
-//     if(event1.eventtype == type){
-//       callbacks(event1); //等于下面的gete（e）
-//     }
+    }
+    if(event1.eventtype == type){
+      callbacks(event1); //等于下面的gete（e）
+    }
     
-// }
-// mylistener('keypress', function gete(e){  
-//     console.log(e);
-// })
+}
+mylistener('keypress', function gete(e){  
+    console.log(e);
+})
 
 // // document.addEventListener('keydown',resy); // 传外面的function不需要（）
 
@@ -73,4 +73,28 @@ function printString(callbackHof, callback_only, str) {
 //  concatFirst(concatAgain,"aaa")
 
  printString(concatFirst, concatAgain, 'anything');
+
+ function addlisten(type,cb){
+  let something = {
+    type :'keyup',
+    mouse: 'fuck',
+    feel :'high'
+  }
+   if(something.feel = type){
+    cb(something.type)
+   }
+ }
+
+//  addlisten('high',function cb(e){   //cb（...) 这里括号里面的东西可以是任何值， 下方的callback function就需要
+//   console.log(e)
+   
+//  })
+
+ //也可以写成
+ const callback = (e)=>{
+  console.log(e);
+}
+
+ addlisten('high',callback)
+
  

@@ -3,7 +3,7 @@ let pass2 = document.getElementById('ps2');
 let result = document.querySelector('h1')
 
 function checkpassword(){
-    result.innerText = pass1.value === pass2.value ? 'matched' :'not matched'
+    result.innerText = pass1.value === pass2.value ? 'matched' :'not matched';
 }
 
 pass1.addEventListener('keyup', ()=>{
@@ -16,3 +16,4 @@ pass1.addEventListener('keyup', ()=>{
 })
 
 pass2.addEventListener('keyup',checkpassword)
+
